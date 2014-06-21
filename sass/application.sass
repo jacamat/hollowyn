@@ -1,5 +1,59 @@
+// Mixins
 @import 'bourbon/bourbon'
+@import 'neat/neat'
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300)
 
-$sea-foam: #7a95a8
+// Color Palette 
+$background-color: #7a95a8
 
-body sea-foam
+$font-color: #ffffff
+$copyright: #7f5950
+
+// Font Palette
+$font-stack: 'Open Sans', Helvetica, sans-serif
+
+body
+  background-image: url('../img/hero.jpg')
+  font: 100% $font-stack
+  color: $font-color
+  text-align: justify
+  
+div.container
+  $max-width: 600px
+  @include outer-container
+
+header
+  text-align: center
+  h1
+    font-size: 50px
+    font-weight: 300
+  nav
+
+p
+  font-size: 15px
+  line-height: 25px
+
+input.textbox
+  box-shadow: -2px -2px 2px #000
+  height: 70px
+  width: 350px
+  font-size: 20px
+  padding: 4px 4px 4px 4px
+  border-radius: 4px
+  background-color: rgba(0,0,0, 0.2)
+  margin-top: 80px
+
+input.textbox:focus
+  outline: none
+  box-shadow: 0px 0px 8px #7ccbc6
+
+button
+  @include button
+  margin-left: 50px
+  height: 70px
+  width: 180px
+  background-color: #7bcbc8
+
+footer
+  text-align: right
+
