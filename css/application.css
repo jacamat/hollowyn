@@ -13,7 +13,8 @@ body {
 div.container {
   max-width: 600px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding: 20px; }
   div.container:after {
     content: "";
     display: table;
@@ -58,7 +59,7 @@ button {
   text-decoration: none;
   text-shadow: 0 1px 0 #0065d6;
   background-clip: padding-box;
-  margin-left: 50px;
+  margin-left: 20px;
   height: 70px;
   width: 180px;
   background-color: #7bcbc8; }
